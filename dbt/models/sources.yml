@@ -1,0 +1,43 @@
+version: 2
+sources:
+- name: raw
+  schema: raw
+  tables:
+  - name: jobs
+    columns:
+    - name: id
+      tests:
+      - unique
+      - not_null
+  - name: snapshots
+    columns:
+    - name: snapshot_id
+      tests:
+      - unique
+      - not_null
+  - name: snapshot_jobs
+    columns:
+    - name: snapshot_id
+      tests:
+      - not_null
+models:
+- name: stg_jobs
+  columns:
+  - name: id
+    tests:
+    - unique
+    - not_null
+  - name: country
+    tests:
+    - not_null
+- name: stg_snapshots
+  columns:
+  - name: snapshot_id
+    tests:
+    - unique
+    - not_null
+- name: stg_snapshot_jobs
+  columns:
+  - name: job_id
+    tests:
+    - not_null
