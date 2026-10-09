@@ -1,0 +1,8 @@
+name: job_market_intelligence
+version: '1.0.0'
+config-version: 2
+profile: job_market_intelligence
+model-paths: [models]
+models:
+  job_market_intelligence:
+    +materialized: view
