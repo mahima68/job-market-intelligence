@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.sqlite
+*.sqlite-journal
+data/live-analytics.json
+dashboard-live.html
+dbt/profiles.yml
+dbt/target/
+dbt/logs/
+logs/
+data/collection.lock
+daily-collection.plist
+*.html.tmp
