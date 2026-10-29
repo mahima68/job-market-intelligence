@@ -1,0 +1,193 @@
+{
+  "reviewer": "Codex AI; not independently human-reviewed",
+  "seed": 20261029,
+  "sampling": "40 random records from unique title-plus-description strings, ordered by first provider ID; original 409-record collection",
+  "task": "Explicit mentions in title plus available description; not required-skill classification",
+  "source_observation": "2026-10-09T18:17:49.516555+00:00",
+  "records": [
+    {
+      "id": "in:5888775047",
+      "expected": []
+    },
+    {
+      "id": "in:5860532858",
+      "expected": []
+    },
+    {
+      "id": "in:5503836577",
+      "expected": [
+        "SQL",
+        "Python"
+      ]
+    },
+    {
+      "id": "in:5905912270",
+      "expected": []
+    },
+    {
+      "id": "in:5818416845",
+      "expected": []
+    },
+    {
+      "id": "in:5861795571",
+      "expected": []
+    },
+    {
+      "id": "in:5727133034",
+      "expected": []
+    },
+    {
+      "id": "in:4988851694",
+      "expected": []
+    },
+    {
+      "id": "in:5919337446",
+      "expected": []
+    },
+    {
+      "id": "in:5916888095",
+      "expected": []
+    },
+    {
+      "id": "in:5861793858",
+      "expected": []
+    },
+    {
+      "id": "in:5917355642",
+      "expected": []
+    },
+    {
+      "id": "in:5857746715",
+      "expected": [
+        "Power BI",
+        "Tableau"
+      ]
+    },
+    {
+      "id": "in:3032213576",
+      "expected": []
+    },
+    {
+      "id": "in:5706462425",
+      "expected": []
+    },
+    {
+      "id": "in:5917365753",
+      "expected": []
+    },
+    {
+      "id": "in:5677793293",
+      "expected": []
+    },
+    {
+      "id": "in:4686706474",
+      "expected": []
+    },
+    {
+      "id": "in:5856942808",
+      "expected": []
+    },
+    {
+      "id": "in:5912750335",
+      "expected": [
+        "SQL",
+        "Power BI"
+      ]
+    },
+    {
+      "id": "in:5504383539",
+      "expected": []
+    },
+    {
+      "id": "in:5882755324",
+      "expected": []
+    },
+    {
+      "id": "in:4514376622",
+      "expected": []
+    },
+    {
+      "id": "in:5602825903",
+      "expected": []
+    },
+    {
+      "id": "in:5833594451",
+      "expected": []
+    },
+    {
+      "id": "in:5895351103",
+      "expected": []
+    },
+    {
+      "id": "in:3491573841",
+      "expected": []
+    },
+    {
+      "id": "in:5552946478",
+      "expected": []
+    },
+    {
+      "id": "in:2992079466",
+      "expected": []
+    },
+    {
+      "id": "in:5762286343",
+      "expected": [
+        "SQL",
+        "Excel",
+        "Power BI",
+        "Python"
+      ]
+    },
+    {
+      "id": "in:5727033439",
+      "expected": [
+        "Tableau"
+      ]
+    },
+    {
+      "id": "in:5120355680",
+      "expected": [
+        "Excel"
+      ]
+    },
+    {
+      "id": "in:5859769248",
+      "expected": []
+    },
+    {
+      "id": "in:5850376278",
+      "expected": []
+    },
+    {
+      "id": "in:5211779279",
+      "expected": []
+    },
+    {
+      "id": "in:5146507084",
+      "expected": []
+    },
+    {
+      "id": "in:5887521034",
+      "expected": [
+        "SQL",
+        "Power BI",
+        "Tableau"
+      ]
+    },
+    {
+      "id": "in:5885446748",
+      "expected": [
+        "Power BI"
+      ]
+    },
+    {
+      "id": "in:4344578568",
+      "expected": []
+    },
+    {
+      "id": "in:3433222166",
+      "expected": []
+    }
+  ]
+}
