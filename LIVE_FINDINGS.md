@@ -1,33 +1,37 @@
-# First live collection findings
+# Live collection findings
 
-Collected: 2026-10-09T18:17:49.516555+00:00 (UTC). Market: India. Five role queries, up to two pages of 50 results each.
+Updated 29 October 2026. India; five role queries; up to two pages of 50 results per query. Two comparable real observations use extraction rule version 2. These are search samples, not vacancy censuses.
 
-Latest sample: **409 distinct provider IDs**. These are search-result records, not a verified count of active analyst vacancies.
+| Observation (UTC) | Distinct provider IDs |
+|---|---:|
+| 2026-10-09T18:17:49.516555+00:00 | 409 |
+| 2026-10-29T12:35:41.087406+00:00 | 413 |
 
-| Skill | Snippet mentions | Share of sample |
+| Skill | 9 October mentions | 29 October mentions |
 |---|---:|---:|
-| Power BI | 40 | 9.8% |
-| SQL | 39 | 9.5% |
-| Python | 20 | 4.9% |
-| Tableau | 15 | 3.7% |
-| Excel | 13 | 3.2% |
-| Azure | 5 | 1.2% |
-| GenAI | 5 | 1.2% |
-| AWS | 2 | 0.5% |
-| Snowflake | 1 | 0.2% |
-
-142 records (34.7%) include a non-predicted salary value.
-328 records (80.2%) mention none of the ten tracked skills in their available text.
-45 records repeat an identical nonempty description from another provider ID; identical descriptions do not prove the same vacancy.
+| SQL | 39 | 40 |
+| Power BI | 40 | 38 |
+| Python | 20 | 21 |
+| Tableau | 15 | 14 |
+| Excel | 13 | 14 |
+| Azure | 5 | 11 |
+| GenAI | 5 | 6 |
+| AWS | 2 | 2 |
+| Snowflake | 1 | 2 |
+| dbt | 0 | 0 |
 
 ## Interpretation
-Power BI and SQL have the highest tracked mention counts in this collected sample. The low overall skill coverage reflects sparse/truncated descriptions and search coverage; it does not imply employers do not request those skills. Search results may include adjacent or unrelated roles. Full descriptions and a relevance review are needed before using these rates to choose learning priorities.
 
-## Accuracy review
-Reviewed eight snippets from the initial connection test and twelve skill-positive snippets from the wider collection. A real-text range bug (2 to 4 years) was corrected and regression-tested; extraction rules were versioned and the collection refreshed. Repeated syndicated snippets and short descriptions were observed. This focused review is not a measured precision/recall evaluation.
+SQL and Power BI remain the most frequently mentioned tracked skills. Counts use different denominators: 409 and 413. Two observations do not establish a sustained trend. Results depend on query wording, ranking, truncated descriptions and provider coverage. An absent mention does not mean a skill is unnecessary; adverts with different IDs may be duplicates. Search results may include unrelated roles.
 
-## Verification and next observations
-All ten latest skill counts and their denominators agree with PostgreSQL. The five dbt models built and thirteen data tests passed on real records. Only one comparable observation uses the revised extraction rules, so a time trend cannot yet be claimed. Earlier observations remain preserved under their original rule version.
+## Extraction evaluation
 
-## Scheduling status
-A daily 09:00 schedule was generated. macOS launchctl returned a bootstrap error, so the schedule is not active. Run the activation command in README from your own terminal to register it; no administrator command is recommended here.
+A deterministic sample of 40 distinct title-plus-description strings from the original collection was annotated by Codex AI before replaying the extractor. All 40 label sets matched: 16 true-positive skill mentions, zero false positives and zero false negatives. Only SQL, Excel, Power BI, Python and Tableau have positive support. This is a small AI-reviewed agreement check, not an independent human audit or evidence of perfect real-world accuracy. See [evaluation methodology](evaluation/README.md), [labels](evaluation/annotations.json) and [measured results](evaluation/results.json).
+
+## Verification
+
+The original collection's ten skill counts and denominators reconciled with PostgreSQL; five dbt models and thirteen dbt checks passed. That verification applies to the earlier collection. The new observation has not been revalidated in PostgreSQL. Observations remain preserved under their original extraction-rule versions.
+
+## Scheduling
+
+The macOS launchd activation failed again on 29 October. An active Codex daily follow-up now requests collection at 09:00 Asia/Kolkata and will report a milestone after seven observations on distinct dates. Its first scheduled successful execution is pending. Raw records, live dashboards and credentials stay local. The [public interactive demo](https://mahima68.github.io/job-market-intelligence/) uses fictional postings and simulated weeks.
