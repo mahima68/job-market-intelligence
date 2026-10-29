@@ -1,0 +1,95 @@
+{
+  "records": 40,
+  "exact_matches": 40,
+  "reviewer": "Codex AI; not independently human-reviewed",
+  "rule_version": "2",
+  "micro": {
+    "tp": 16,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1
+  },
+  "per_skill": {
+    "SQL": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "support": 4,
+      "precision": 1,
+      "recall": 1
+    },
+    "Excel": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "support": 2,
+      "precision": 1,
+      "recall": 1
+    },
+    "Power BI": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "support": 5,
+      "precision": 1,
+      "recall": 1
+    },
+    "Python": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "support": 2,
+      "precision": 1,
+      "recall": 1
+    },
+    "Tableau": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "support": 3,
+      "precision": 1,
+      "recall": 1
+    },
+    "AWS": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "support": 0,
+      "precision": null,
+      "recall": null
+    },
+    "Azure": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "support": 0,
+      "precision": null,
+      "recall": null
+    },
+    "Snowflake": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "support": 0,
+      "precision": null,
+      "recall": null
+    },
+    "dbt": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "support": 0,
+      "precision": null,
+      "recall": null
+    },
+    "GenAI": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "support": 0,
+      "precision": null,
+      "recall": null
+    }
+  }
+}
