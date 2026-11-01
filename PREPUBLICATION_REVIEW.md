@@ -1,6 +1,6 @@
-# Pre-publication review
+# Historical pre-publication review
 
-Two check passes completed before any GitHub upload.
+This records the original checks completed before publication. The repository is now public. These historical results are not a fresh verification of the current version.
 
 | Check | Pass 1 | Pass 2 |
 |---|---|---|
@@ -13,6 +13,6 @@ Corrections: CSV formula protection now handles leading whitespace; custom sched
 
 Publication includes source, synthetic demo assets, screenshots and aggregate live findings. It excludes .env, live payloads/dashboards, databases, generated dbt output and local database profiles.
 
-Limitations: daily schedule registration remains inactive on the development computer; real historical trends require more observations; keyword extraction precision and recall have not been measured.
+At the time of this review, local schedule registration was inactive and keyword extraction precision and recall had not been measured. See [the current README](README.md) for collection and scheduling evidence, and [the subsequent skill evaluation](evaluation/README.md) for its small AI-reviewed sample and limitations. More observations are still needed before claiming sustained market trends.
 
-GitHub upload is pending a repository destination and visibility choice.
+The public repository contains the source and sanitized portfolio materials; live credentials and raw API records remain excluded.
